@@ -13,4 +13,9 @@ public class MainClassTest {
     public void testClassNumber() {
         Assert.assertTrue("Class number less  or equal 45",Main.getClassNumber() > 45);
     }
+
+    @Test
+    public void testGetClassString() {
+        Assert.assertTrue("String does not contain hello", Main.getClassString().toLowerCase().contains("hello"));
+    }
 }
